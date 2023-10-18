@@ -1,37 +1,122 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Add your custom styles here */
-        .apple-logo {
-            background-image: url('path/to/your/apple-logo.svg');
-            background-size: contain;
-            width: 25px;
-            height: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="input.css">
+    <link rel="shortcut icon" href="Favicon.svg" type="image/x-icon">
+    <title>Apple</title>
 </head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="NavBar flex backdrop-filter backdrop-blur-lg bg-neutral-900 justify-between items-center px-4 lg:justify-center z-10 sticky top-0 width-[100vw]">
+        <div class="lg:hidden w-8 py-1"> <!-- Add padding and margin to align the horizontal lines -->
+            <hr class="mb-1.5">
+            <hr>
+        </div>
+        <div>
+            <img class="w-6" src="assets/globalnav_apple_image__b5er5ngrzxqq_small.svg" alt="apple-logo"> <!-- Adjust image size -->
+        </div>
+        <ul class="hidden lg:flex lg:space-x-8 lg:text-[#f5f5f7] lg:font-extralight lg:text-sm lg:hover:text-white lg:hover:cursor-pointer lg:mx-6"> <!-- Adjust spacing and margin -->
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>AirPods</li>
+            <li>TV</li>
+            <li>Meelelahutus</li>
+            <li>Kasutajatugi</li>
+            <li>Müügikohad</li>
+            <img class="w-5" src="assets/search-3-xxl.png" alt="">
+        </ul>
+        <div>
+            <img class="" src="assets/globalnav_bag_image__yzte50i47ciu_small.svg" alt="Bag-svg"> <!-- Add appropriate styling classes if needed -->
+        </div>
+    </nav>
 
-<body class="font-sans">
-    <div>
-        <nav class="fixed top-0 left-0 w-full backdrop-blur-10 bg-neutral-900 z-10">
-            <ul class="navlinks flex justify-center flex-wrap p-4 space-x-4 text-sm color text-white gap-11">
-                <li><a href="/" title="Mac" class="navlink">Mac</a></li>
-                <li><a href="/applestore" title="Store" class="navlink">Store</a></li>
-                <li><a href="/" title="iPad" class="navlink">iPad</a></li>
-                <li><a href="/" title="iPhone" class="navlink">iPhone</a></li>
-                <li><a href="/" title="Watch" class="navlink">Watch</a></li>
-                <li><a href="/" title="AirPods" class="navlink">AirPods</a></li>
-                <li><a href="/" title="TV & Home" class="navlink">TV & Home</a></li>
-                <li><a href="/" title="Entertainment" class="navlink">Entertainment</a></li>
-                <li><a href="/" title="Accessories" class="navlink">Accessories</a></li>
-            </ul>
-        </nav>
-    </div>
+    <!-- Section 1 -->
+    <section class="py-8 border-b-0 border-t-0 border-white flex flex-col justify-start items-center bg-[url('assets/mil.jpg')] h-[36rem] lg:h-[40rem] w-[100%] bg-top bg-cover lg:bg-[url('assets/hero2.jpg')]">
+        <h1 class="text-4xl font-semibold lg:text-6xl text-[#f5f5f7] tracking-tighter">iPhone 15 Pro</h1>
+        <h1 class="text-xl py-1 lg:text-3xl text-[#f5f5f7] lg:tracking-tight lg:py-2">Pro.Beyond.</h1>
+        <h3 class="border-dotted border-2 w-fit border-gray-400 rounded-full px-3 text-gray-400 my-1">With superfast 5G*</h3>
+        <p>
+            <a class="text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl" href="#">Learn more</a>
+            <a class="text-cyan-600 text-lg font-bold hover:underline lg:text-xl lg:pl-8" href="#">Buy</a>
+        </p>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="py-8 border-b-0 border-t-0 border-white bg-[url('assets/milank.jpg')] h-[30rem] lg:h-[37rem] bg-cover bg-top flex flex-col justify-end items-center">
+        <h1 class="text-4xl font-semibold lg:text-6xl text-[#f5f5f7] tracking-tighter">Give WOW</h1>
+        <h2 class="text-center text-xl py-2 lg:text-3xl text-[#f5f5f7] lg:tracking-tight lg:py-2 w-[20rem] lg:w-[33rem]">This holiday season, find the perfect gift for everyone on the list.</h2>
+        <a class="block text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl mb-12" href="#">Shop the gift guide</a>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="py-8 border-b-0 border-t-0 border-white">
+        <div class="lg:flex lg:space-x-0 lg:border-b-0 lg:border-t-0 border-white">
+            <div class="lg:w-1/2 bg-[url('assets/ipad.jpg')] lg:h-[37rem] flex flex-col justify-start items-center h-[33rem] bg-cover bg-top">
+                <h1 class="text-4xl font-semibold lg:text-4xl text-[#1d1d1f] tracking-tighter pt-6 lg:mt-7">iPad</h1>
+                <p class="text-xl py-1 lg:text-2xl text-[#1d1d1f] lg:tracking-tight lg:py-2">Lovable.Drawable.Magical</p>
+                <p>
+                    <a class="text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl lg:pt-[-1rem]" href="#">Learn more</a>
+                    <a class="text-cyan-600 text-lg font-bold hover:underline lg:text-xl lg:pl-2" href="#">Buy</a>
+                </p>
+            </div>
+            <div class="lg:w-1/2 bg-[url('assets/ipad2.jpg')] lg:h-[37rem] bg-cover bg-top h-[33rem] lg:w-[50vw] justify-start items-center">
+                <h1 class="text-4xl font-semibold lg:text-4xl text-[#f5f5f7] tracking-tighter pt-6 lg:mt-7">iPad Pro</h1>
+                <p class="text-xl flex lg:text-2xl text-[#f5f5f7] lg:tracking-tight lg:my-2 after:content-[url('assets/m2.png')] after:inline-block after:items-center after:w-2">Supercharged by</p>
+                <p>
+                    <a class="text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl" href="#">Learn more</a>
+                    <a class="text-cyan-600 text-lg font-bold hover:underline lg:text-xl lg:pl-8" href="#">Buy</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Section 6 -->
+    <section class="flex flex-col lg:flex-row lg:border-b-8 lg:border-t-4 border-white">
+        <div class="lg:border-8 border-b-8 lg:border-b-0 border-t-4 lg:border-t-0 border-white lg:border-r-8 lg:w-[50vw] box-1 bg-[url('assets/airpod.jpg')] lg:h-[37rem] flex flex-col justify-start items-center h-[33rem] bg-cover bg-top">
+            <img class="mt-6 lg:mt-12" src="assets/promo.png" alt="">
+            <h1 class="text-4xl font-semibold lg:text-4xl lg:font-bold text-[#1d1d1f] tracking-tighter lg:mt-2">AirPods</h1>
+            <p class="text-xl py-1 lg:text-2xl text-[#1d1d1f] lg:tracking-tight lg:py-2">Share the joy.</p>
+            <p>
+                <a class="text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl lg:pt-[-1rem]" href="#">Shop</a>
+            </p>
+        </div>
+        <div class="lg:border-8 border-b-8 lg:border-b-0 border-t-4 lg:border-t-0 lg:border-l-4 border-white Box-2 flex flex-col bg-[url('assets/iwatch.jpg')] lg:h-[37rem] bg-cover bg-top h-[33rem] lg:w-[50vw] justify-start items-center">
+            <img class="pt-10 w-28 lg:w-[8.5rem] lg:pt-14" src="assets/iw.png" alt="">
+            <p class="text-xl lg:text-2xl text-[#1d1d1f] lg:tracking-tight lg:my-2">Adventure awaits.</p>
+            <p>
+                <a class="text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl" href="#">Learn more</a>
+                <a class="text-cyan-600 text-lg font-bold hover:underline lg:text-xl lg:pl-2" href="#">Buy</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="flex flex-col lg:flex-row lg:border-b-8 lg:border-t-4 border-white">
+        <div class="lg:border-8 border-b-8 lg:border-b-0 border-t-4 lg:border-t-0 border-white lg:border-r-8 lg:w-[50vw] box-1 bg-[url('assets/iwatch2.jpg')] lg:h-[37rem] flex flex-col justify-start items-center h-[33rem] bg-cover bg-top">
+            <img class="pt-10 lg:pt-14 w-28 lg:w-[8.5rem]" src="assets/it.png" alt="">
+            <p class="text-xl py-1 lg:text-2xl text-[#f5f5f7] lg:tracking-tight lg:py-2">A healthy leap ahead</p>
+            <p>
+                <a class="text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl lg:pt-[-1rem]" href="#">Learn more</a>
+                <a class="text-cyan-600 text-lg font-bold hover:underline lg:text-xl lg:pl-3" href="#">Buy</a>
+            </p>
+        </div>
+        <div class="border-b-8 lg:border-b-0 border-t-4 lg:border-t-0 lg:border-8 lg:border-l-4 border-white Box-2 flex flex-col bg-[url('assets/macs.png')] lg:h-[37rem] bg-cover bg-top h-[33rem] lg:w-[50vw] justify-start items-center">
+            <h1 class="text-4xl font-semibold lg:font-bold lg:text-4xl text-[#1d1d1f] tracking-tighter pt-6 lg:mt-7">MacBook Air</h1>
+            <p class="text-xl flex lg:text-2xl text-[#1d1d1f] lg:tracking-tight lg:my-2 after:content-[url('assets/m2.png')] after:inline-block after:items-center after:w-2">Supercharged by</p>
+            <p>
+                <a class="text-cyan-600 mr-4 text-lg font-bold hover:underline lg:text-xl" href="#">Learn more</a>
+                <a class="text-cyan-600 text-lg font-bold hover:underline lg:text-xl lg:pl-4" href="#">Buy</a>
+            </p>
+        </div>
+    </section>
+
+    
 </body>
-
 </html>
